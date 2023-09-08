@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    {% if messages %}
+    {% for message in messages %}
+        {{ message }}
+    {% endfor %}
+    {% endif %}
+
+
+
+
+    <div class="nav">
+        <div class="left">
+            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="39" viewBox="0 0 38 39" fill="none">
+                <rect x="0.428528" y="0.928711" width="37.1429" height="37.1429" rx="6.19048" fill="black"/>
+                <path d="M18.6832 11.6104V12.6475C18.6832 13.5399 18.5161 13.6845 17.9399 13.9983L12.5714 16.7237V16.8443L17.9156 19.5217C18.5161 19.835 18.6832 19.9558 18.6832 20.8724V22.03C18.6832 22.7535 18.443 22.9948 17.8198 22.6572L9.74272 18.2189C9.26401 17.9538 9.09515 17.7607 9.09515 17.2062V16.4343C9.09515 15.8795 9.26401 15.6624 9.74272 15.3973L17.8198 10.9832C18.443 10.6456 18.6832 10.8867 18.6832 11.6104Z" fill="white"/>
+                <path d="M19.5363 15.4246L27.589 19.8385C28.0921 20.1038 28.2609 20.2967 28.2609 20.8513V21.6233C28.2609 22.2021 28.0921 22.395 27.589 22.6603L19.5363 27.0742C18.8887 27.412 18.6729 27.1709 18.6729 26.4472V25.4101C18.6729 24.5177 18.84 24.3729 19.4162 24.0835L24.7846 21.3579V21.2133L19.4405 18.5359C18.84 18.2466 18.6729 18.1017 18.6729 17.1851V16.0274C18.6729 15.3037 18.8887 15.0628 19.5363 15.4246Z" fill="white"/>
+              </svg>
+              <h2>Name</h2>
+        </div>
+        <div class="centered">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Sales</a>
+        </div>
+        <div class="right">
+            <a href="{% url 'logout' %}">Log out</a>
+            <a href="#">Profile</a>
+        </div>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

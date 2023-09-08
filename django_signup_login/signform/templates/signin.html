@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in Page</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="cover">
+        <h1 class="coverText">Welcome back!</h1>
+        <img class="coverImg" src="{% static '/images/login-image.png' %}">
+    </div>
+    <div class="form">
+        <h2>Sign in your Account</h2>
+        <form method="POST" action="">
+            {% csrf_token %}
+            {% if form.errors %}
+                {% for field in form %}
+                {% if field.errors %}
+                <div class="errors">
+                    {{ field.errors }}
+                    <button class="closebtn">Close</button>
+                </div>
+                {% endif %}
+                {% endfor %}
+            {% endif %}
+            <div class="inputs">
+                <input class="input" type="text" name="username" placeholder="Username" required>
+                <br>
+                <input class="input" type="password" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="signin">Sign In</button>
+            <p>Dont have an account? <a href="{% url 'signup' %}">Sign Up</a></p>
+        </form>
+    </div>
+</body>
+</html>

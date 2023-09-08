@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+
+body {
+    margin: 0;
+    /* background: -webkit-gradient(linear, left top, left bottom, from(#4d2bc8), to(#55118d)) fixed; */
+    background: #fff;
+    display: flex;
+}
+
+.cover {
+    width: 760px;
+    height: 100vh;
+    background: linear-gradient(31deg, #8C43E6 -8.43%, #EF8D6D 100%);
+    position: relative;
+}
+
+.cover img {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    background: contain no-repeat;
+}
+.coverText {
+    color: #FFF;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 100px;
+    margin-top: 70px;
+}
+
+.form {
+    width: 760px;
+    height: 100vh;
+    background-color: #fff;
+    position: relative;
+}
+
+.form h2 {
+    color: #000;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 70px;
+    margin-top: 100px;
+}
+
+.buttons {
+    position: absolute;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin-left: 70px;
+    
+}
+
+.google {
+    display: flex;
+    width: 300px;
+    padding: 15px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    background: linear-gradient(90deg, #F9AF3A -12.59%, #DE5F8F 114.44%);
+    box-shadow: 0px 15px 10px 0px rgba(222, 95, 143, 0.12);
+    cursor: pointer;
+}
+
+.facebook {
+    display: flex;
+    width: 300px;
+    padding: 15px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    border: none;
+    background: #FFF;
+    box-shadow: 0px 15px 10px 0px rgba(222, 95, 143, 0.12);
+    cursor: pointer;
+}
+
+.inputs {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 70px;
+    margin-top: 120px;
+}
+
+.inputs h4 {
+    color: #000;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.input {
+    display: flex;
+    width: 346px;
+    padding: 16px 24px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    border: 1px solid #EAEBF6;
+    background: #FFF;
+}
+
+
+.signin {
+    display: flex;
+    width: 270px;
+    padding: 16px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    background: linear-gradient(90deg, #893BE6 -12.59%, #F19065 114.44%);
+    box-shadow: 0px 15px 50px 0px rgba(222, 95, 143, 0.12);
+    cursor: pointer;
+    margin-left: 70px;
+    margin-top: 40px;
+}
+
+.form p {
+    color: #94969A;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    margin-left: 75px;
+}
+
+.form p a {
+    color: #553BF1;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.errors {
+    display: inline-flex;
+    position: absolute;
+    width: 400px;
+    height: 49px;
+    gap: 20px;
+    border-radius: 20px;
+    border: none;
+    background: #F9AF3A;
+    color: #fff;
+    font-family: 'Signika Negative', sans-serif;
+    margin-top: 500px;
+    margin-left: 350px;
+}
+
+.closebtn {
+    display: flex;
+    width: 60px;
+    padding-left: 10px;
+    padding-top: 18px;
+    color: #fff;
+    background: none;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav {
+    position: relative;
+    overflow: hidden;
+    width: 1782.857px;
+    height: 65px;
+    background: #FFF;
+    box-shadow: 0px 0px 18.57143px 0px rgba(0, 0, 0, 0.10);
+}
+
+.nav a {
+    color: black;
+    font-family: 'Signika Negative', sans-serif;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.left {
+    display: flex;
+    position: absolute;
+    left: 50px;
+    top: 12px;
+}
+
+.left h2 {
+    margin: 8px;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.centered  {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.right a {
+    float: right;
+}
